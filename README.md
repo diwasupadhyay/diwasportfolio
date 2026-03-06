@@ -42,4 +42,4 @@ Deployed on [Netlify](https://netlify.com). The `netlify.toml` config is include
 
 ---
 
-Built by **Diwas Upadhyay**
+Built by **Diwas**
