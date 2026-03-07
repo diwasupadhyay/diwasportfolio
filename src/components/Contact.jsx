@@ -34,8 +34,7 @@ const Contact = () => {
             <span style={{ color: '#60a5fa' }}>Together</span>
           </h2>
           <p className="text-sm leading-relaxed mb-8" style={{ color: '#8892b0' }}>
-            I'm currently open to internship and freelance opportunities. Whether you have a question,
-            a project idea, or just want to say hi — my inbox is always open.
+            I'm actively looking for internship and full-time roles where I can grow, contribute, and build things that matter. Feel free to reach out — I'd love to connect.
           </p>
 
           <motion.a

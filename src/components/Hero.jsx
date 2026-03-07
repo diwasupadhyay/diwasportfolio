@@ -91,11 +91,14 @@ const Hero = ({ show }) => {
 
             <motion.p
               variants={fadeUp}
-              className="text-base md:text-lg mb-6 max-w-[480px] leading-relaxed"
+              className="text-base md:text-lg mb-6 max-w-[520px] leading-relaxed"
               style={{ color: '#8892b0' }}
             >
-              I build full-stack apps and data pipelines — from React
-              interfaces to backend APIs and big data systems.
+              Software engineer student who loves turning complex problems into
+              clean, efficient solutions. I work across the full stack
+              crafting intuitive interfaces, building robust APIs,
+              and designing data pipelines that actually scale.
+              Always learning, always shipping.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mb-8">
@@ -124,9 +127,6 @@ const Hero = ({ show }) => {
               <a href="#projects" className="btn-primary">
                 View Projects
                 <FiArrowDown size={14} />
-              </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-ghost" download="Diwas_Upadhyay_Resume.pdf">
-                Download CV
               </a>
             </motion.div>
           </motion.div>
