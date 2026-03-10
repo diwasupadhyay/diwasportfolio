@@ -6,23 +6,23 @@ import { useTextScramble } from '@/hooks/useTextScramble';
 
 const featured = [
   {
-    title: 'PChat',
-    subtitle: 'Privacy-First Chat App',
-    description:
-      'Production-grade real-time chat with client-side AES-GCM encryption. Messages auto-delete after reading. Zero tracking. Features include friend system, ESC privacy mode, and full mobile responsiveness.',
-    tech: ['React', 'Firebase', 'AES-GCM', 'Firestore', 'Netlify'],
-    github: 'https://github.com/diwasupadhyay',
-    live: 'https://pchats.me',
-    color: '#60a5fa',
-  },
-  {
     title: 'Crop Price Predictor',
     subtitle: 'ML-Powered Agriculture Tool',
     description:
       'Machine learning web app predicting crop prices using Random Forest algorithms. Helps farmers and traders make data-informed decisions based on market and environmental inputs.',
     tech: ['Python', 'Random Forest', 'React', 'ML', 'Netlify'],
     github: 'https://github.com/diwasupadhyay/test-crop-project-new',
-    live: 'https://crop-price-predication.netlify.app/',
+    live: 'https://www.croppriceprediction.app',
+    color: '#60a5fa',
+  },
+  {
+    title: 'PChat',
+    subtitle: 'Privacy-First Chat App',
+    description:
+      'Production-grade real-time chat with client-side AES-GCM encryption. Messages auto-delete after reading. Zero tracking. Features include friend system, ESC privacy mode, and full mobile responsiveness.',
+    tech: ['React', 'Firebase', 'AES-GCM', 'Firestore', 'Netlify'],
+    github: 'https://github.com/diwasupadhyay/pchat',
+    live: 'https://pchats.me',
     color: '#60a5fa',
   },
   {
