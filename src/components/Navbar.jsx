@@ -71,7 +71,7 @@ const Navbar = ({ show }) => {
             </motion.a>
           ))}
           <motion.a
-            href="/resume.pdf"
+            href="/diwasresume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ y: -20, opacity: 0 }}
@@ -134,7 +134,7 @@ const Navbar = ({ show }) => {
                   {link.name}
                 </motion.a>
               ))}
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4" onClick={() => setMenuOpen(false)}>
+              <a href="/diwasresume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4" onClick={() => setMenuOpen(false)}>
                 Resume
               </a>
             </nav>
