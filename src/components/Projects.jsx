@@ -35,6 +35,36 @@ const featured = [
     live: null,
     color: '#60a5fa',
   },
+  {
+    title: 'AutoDashboard',
+    subtitle: 'Data Visualization Web Application',
+    description:
+      'Built a web app that accepts any CSV and auto-generates summary statistics, charts, and visual insights with data validation and type inference. Designed outputs to communicate analytical findings clearly to non-technical users without any coding knowledge.',
+    tech: ['Python', 'React', 'Pandas', 'Matplotlib'],
+    github: 'https://github.com/diwasupadhyay/AutoDashboard',
+    live: 'https://autodashboardcsv.app/',
+    color: '#60a5fa',
+  },
+  {
+    title: 'Sales & Market Analytics Dashboard',
+    subtitle: 'Tableau Public',
+    description:
+      'Cleaned and transformed a 1,200-row retail dataset using Python and Pandas, handling missing values and data quality checks before analysis. Built interactive Tableau dashboards uncovering sales KPIs, regional trends, and patterns to support data-driven decisions.',
+    tech: ['Python', 'Pandas', 'Tableau', 'SQL'],
+    github: null,
+    live: 'https://public.tableau.com/app/profile/diwas.upadhyay/viz/Sales-Market-Analytics-Dashboard/SalesMarketAnalyticsDashboard',
+    color: '#60a5fa',
+  },
+  {
+    title: 'Power BI Sales Dashboard',
+    subtitle: 'Business Intelligence Dashboard',
+    description:
+      'Designed a retail sales analytics dashboard in Power BI with DAX measures for revenue, profit margins, and category-level performance. Connected SQL data sources and built drill-through reports for interactive exploration of trends across regions and time periods.',
+    tech: ['Power BI', 'SQL', 'DAX'],
+    github: 'https://github.com/diwasupadhyay/powerbi-dashboard',
+    live: null,
+    color: '#60a5fa',
+  },
 ];
 
 /* 3D Tilt Card wrapper */
