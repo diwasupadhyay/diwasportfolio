@@ -21,6 +21,73 @@ const extracurricular = [
 ];
 
 const certifications = [
+  {
+    name: "Prepare Data for ML APIs on Google Cloud",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+    featured: true,
+  },
+  {
+    name: "Build a Secure Google Cloud Network",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Set Up an App Dev Environment on Google Cloud",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Implementing Cloud Load Balancing for Compute Engine",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Google Cloud Computing Foundations: Networking & Security in Google Cloud",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
+    issuer: "Google Cloud Skills Boost",
+    year: "Oct 2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Level 3 GenAI: Prompt Engineering",
+    issuer: "Google Cloud Skills Boost",
+    year: "2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Silver League (12,615 points)",
+    issuer: "Google Cloud Skills Boost",
+    year: "2023",
+    color: "#60a5fa",
+  },
+  {
+    name: "Member since 2023",
+    issuer: "Google Cloud Skills Boost",
+    year: "2023",
+    color: "#60a5fa",
+  },
   { name: "Software Engineering", issuer: "JPMorgan Chase & Co.", year: "2024", color: "#60a5fa" },
   { name: "React Development", issuer: "GeeksforGeeks", year: "2024", color: "#60a5fa" },
   { name: "Python Bootcamp", issuer: "Udemy", year: "2023", color: "#60a5fa" },
@@ -161,6 +228,19 @@ const Education = () => {
                   className="absolute top-0 left-0 right-0 h-[1px] opacity-60 group-hover:opacity-100 transition-opacity"
                   style={{ background: `linear-gradient(90deg, ${cert.color}, transparent)` }}
                 />
+                {cert.featured && (
+                  <span
+                    className="absolute top-3 right-3 text-[10px] tracking-wider uppercase px-2 py-0.5 rounded"
+                    style={{
+                      fontFamily: '"Fira Code", monospace',
+                      color: cert.color,
+                      backgroundColor: `${cert.color}14`,
+                      border: `1px solid ${cert.color}35`,
+                    }}
+                  >
+                    Featured
+                  </span>
+                )}
                 <p className="text-sm font-semibold mb-1" style={{ color: '#ccd6f6' }}>
                   {cert.name}
                 </p>
