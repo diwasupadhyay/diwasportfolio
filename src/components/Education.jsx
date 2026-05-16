@@ -24,73 +24,51 @@ const certifications = [
   {
     name: "Prepare Data for ML APIs on Google Cloud",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
-    featured: true,
   },
   {
     name: "Build a Secure Google Cloud Network",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Set Up an App Dev Environment on Google Cloud",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Implementing Cloud Load Balancing for Compute Engine",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Google Cloud Computing Foundations: Networking & Security in Google Cloud",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
     issuer: "Google Cloud Skills Boost",
-    year: "Oct 2023",
     color: "#60a5fa",
   },
   {
     name: "Level 3 GenAI: Prompt Engineering",
     issuer: "Google Cloud Skills Boost",
-    year: "2023",
     color: "#60a5fa",
   },
-  {
-    name: "Silver League (12,615 points)",
-    issuer: "Google Cloud Skills Boost",
-    year: "2023",
-    color: "#60a5fa",
-  },
-  {
-    name: "Member since 2023",
-    issuer: "Google Cloud Skills Boost",
-    year: "2023",
-    color: "#60a5fa",
-  },
-  { name: "Software Engineering", issuer: "JPMorgan Chase & Co.", year: "2024", color: "#60a5fa" },
-  { name: "React Development", issuer: "GeeksforGeeks", year: "2024", color: "#60a5fa" },
-  { name: "Python Bootcamp", issuer: "Udemy", year: "2023", color: "#60a5fa" },
+  { name: "Software Engineering", issuer: "JPMorgan Chase & Co.", color: "#60a5fa" },
+  { name: "React Development", issuer: "GeeksforGeeks", color: "#60a5fa" },
+  { name: "Python Bootcamp", issuer: "Udemy", color: "#60a5fa" },
 ];
 
 const Education = () => {
@@ -214,6 +192,16 @@ const Education = () => {
             <span className="w-6 h-[1px]" style={{ background: '#60a5fa' }} />
             Certifications
           </h3>
+          <a
+            href="https://www.skills.google/public_profiles/57c51b0f-478b-46ed-b6c9-29958fb0f078"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs tracking-[0.2em] uppercase inline-flex items-center gap-2 mb-6"
+            style={{ fontFamily: '"Fira Code", monospace', color: '#60a5fa' }}
+          >
+            View Google Skills Boost profile
+            <span aria-hidden="true">↗</span>
+          </a>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {certifications.map((cert, i) => (
               <motion.div
@@ -228,36 +216,12 @@ const Education = () => {
                   className="absolute top-0 left-0 right-0 h-[1px] opacity-60 group-hover:opacity-100 transition-opacity"
                   style={{ background: `linear-gradient(90deg, ${cert.color}, transparent)` }}
                 />
-                {cert.featured && (
-                  <span
-                    className="absolute top-3 right-3 text-[10px] tracking-wider uppercase px-2 py-0.5 rounded"
-                    style={{
-                      fontFamily: '"Fira Code", monospace',
-                      color: cert.color,
-                      backgroundColor: `${cert.color}14`,
-                      border: `1px solid ${cert.color}35`,
-                    }}
-                  >
-                    Featured
-                  </span>
-                )}
                 <p className="text-sm font-semibold mb-1" style={{ color: '#ccd6f6' }}>
                   {cert.name}
                 </p>
                 <p className="text-xs" style={{ color: '#8892b0' }}>
                   {cert.issuer}
                 </p>
-                <span
-                  className="text-[10px] mt-2 inline-block px-2 py-0.5 rounded"
-                  style={{
-                    fontFamily: '"Fira Code", monospace',
-                    color: cert.color,
-                    backgroundColor: `${cert.color}08`,
-                    border: `1px solid ${cert.color}15`,
-                  }}
-                >
-                  {cert.year}
-                </span>
               </motion.div>
             ))}
           </div>
